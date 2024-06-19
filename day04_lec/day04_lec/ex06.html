@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*  
+		   && : 논리 and 연산자 (논리곱)  - short circuit 
+		   || : 논리 or 연산자 (논리합)   - short circuit 
+		   !  : 부정 연산자 (true <-> false)
+		*/
+      /* && : 논리 and 연산자
+		        모두 true 일 때만 true 를 반환하고
+				하나라도 false 면 false 를 반환함
+				true 가 나오면 뒤에 어떤 값이 나오는지 확인하지만
+				false 가 나오면 false 를 반환하고 연산을 종료함 (short circuit)
+		*/
+      console.log(true && true);
+      console.log(true && false);
+      console.log(false && true);
+      console.log(false && false);
+
+      /* short circuit  */
+      console.log(`true && (10 + 3)  : ${true && 10 + 3}`);
+      console.log(`false && (10 + 3) : ${false && 10 + 3}`);
+
+      /* || : 논리 or 연산자
+		        모두 false 일 때만 false 를 반환하고
+				하나라도 true 면 true 를 반환함
+				false 가 나오면 뒤에 어떤 값이 나오는지 확인하지만
+				true 가 나오면 true 를 반환하고 연산을 종료함 (short circuit)
+		*/
+      console.log(true || true);
+      console.log(true || false);
+      console.log(false || true);
+      console.log(false || false);
+
+      /* short circuit  */
+      console.log(`true || (10 + 3)  : ${true || 10 + 3}`);
+      console.log(`false || (10 + 3) : ${false || 10 + 3}`);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 329 Call Back Function 콜백함수 
+	   
+	  javascript 에서는 함수를 (변수(literal data)처럼 사용할 수 있음) : 1급 객체(시민) - 1st Citizen
+		1) 변수에 할당할 수 있음
+		2) parameter 로 함수를 지정할 수 있음	
+		    ㄴ 함수를 호출할 때 argument 로 함수를 넣어줌
+	  3) 함수의 return 값으로 함수를 지정할 수 있음
+	-->
+
+    <script>
+      function callTenTimes(callback) {
+        for (let i = 0; i < 10; i++) {
+          // console.log(callback);
+          callback();
+        }
+      }
+      let funct = function () {
+        console.log("함수 호출");
+      };
+      callTenTimes(funct);
+
+			function test1(funct1){
+				console.log(`funct1(10,20) : ${funct1(10,20)}`);
+			}
+			function testFunct(num1, num2){
+        let result = num1 + num2
+				return result;
+			}
+			test1(testFunct);
+
+    </script>
+  </body>
+</html>

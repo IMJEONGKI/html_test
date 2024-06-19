@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+
+		let number1 = 100;
+		console.log(`number1 : ${number1}`);
+		/* ReferenceError: number2 is not defined 
+		   number2 에 값이 할당되지 않아서 출력하지 못함
+		                   is not defined (undefined)
+		   console.log(`number2 : ${number2}`);
+
+		   변수는 값이 할당되어야 사용할 수 있음
+		   변수에는 값을 변경하면서 할당할 수 있음 (재할당 : reassignment)
+		   변수에는 항상 값 하나만 할당할 수 있음
+		   여러 번 값을 할당한 경우, 맨 마지막에 할당한 값이 남음
+		   이 때, 변수에 값을 최초로 할당하는 것을 초기화한다고 함
+		*/
+		/* number2 : undefined */
+		console.log(`number2 : ${typeof(number2)}`);
+
+		number1 = 200;
+		console.log(`number1 : ${number1}`);
+		number1 = 300;
+		console.log(`number1 : ${number1}`);
+		number1 = 400;
+		console.log(`number1 : ${number1}`);
+
+		/* 306 */
+        let radius = 10;
+		const pi = 3.14195265;
+
+		/* Uncaught TypeError: Assignment to constant variable. 
+		pi = 100;
+          */
+
+		  
+		// 원의 넓이 출력하기
+		console.log(`원의 넓이 : ${radius * radius + pi}`)
+
+		// ** : 제곱 연산자
+		console.log(`원의 넓이 : ${radius ** 2 + pi}`)
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      // 이벤트를 연결합니다.
+      window.onload = function () {
+        // 문서 객체를 선택합니다.
+        let header = document.querySelectorAll("h1");
+        // 문서 객체를 조작합니다.
+				for(let i = 0; i < header.length-1; i++) {	
+					header[i].style.color = "orange";
+					header[i].style.background = "red";
+					header[i].innerHTML = "From JavaScript";
+				}
+      };
+    </script>
+  </head>
+  <body>
+		<!-- 353 -->
+    <h1>Header</h1>
+    <h1>Header</h1>
+    <h1>Header</h1>
+  </body>
+</html>

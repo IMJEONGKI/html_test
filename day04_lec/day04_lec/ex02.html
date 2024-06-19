@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*
+
+      기본 자료형
+
+      	숫자형 : number type - integer type(정수) / float type (실수)
+                                       BigInt((2의 53-1 제곱)(9007199254740991) 보다 큰 값 혹은 -(2의 53-1제곱) 보다 작은 정수)
+                                         ㄴ 정수 리터럴 끝에 n을 붙임
+
+      	문자형 : 따옴표로 감쌈 ("", '', ``)
+
+      */
+      let name = "이순신";
+      let age = 46;
+      let str1 = `${name}님은 ${age} 세입니다.`;
+      let str2 = name + "님은 " + age + " 세입니다";
+
+      document.write(str1 + "<br>");
+      document.write(str2 + "<br>");
+      document.write(name, "님은 ", age, " 세입니다<br>");
+      document.write(`3 더하기 4 는 ${3 + 4} 입니다<br>`);
+
+      let friendList = `친구 목록 : <br>
+	  - 더조은<br>
+	  - 아이티<br>
+	  - 아카데미<br>
+	  `;
+      document.write(friendList + "<br>");
+
+      let friendList2 =
+        "친구 목록 : <br> - 더조은<br> - 아이티<br> - 아카데미<br>";
+      document.write(friendList2 + "<br>");
+
+      let friendList3 = "친구 목록 : \n - 더조은\n - 아이티\n - 아카데미\n";
+      document.write(friendList3 + "<br>");
+
+      /*  
+	    <br> :  document.write 에서 줄바꿈
+		\n   :  alert 에서 줄바꿈
+	  */
+      alert(friendList2);
+      alert(friendList3);
+
+      let str3 = "Hello\ntjoeun";
+      let str4 = `Hello
+	  tjoeun`;
+      document.write(str3 + "<br>");
+      document.write(str4 + "<br>");
+
+      /*
+	     enter : /r/n 
+	  */
+
+      document.write(str3 === str4);
+      document.write("<br>");
+      alert(str3 === str4);
+
+	  /*
+	  특수문자
+	  \n : 줄바꿈
+	  \t : 탭
+	  \r : 캐리지리턴
+	  \b : 백스페이스	  
+	  \f : 폼피드
+	  \v : 수직탭
+	  */
+
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 324 : 함수 : code 의 재활용 -->
+
+    <script>
+      /*	  parameter(매개변수)(X)  -->  return값(반환값)(X) */
+
+			/* 함수의 정의부 : definition (defined) */
+			/*  함수의 이름은 함수의 정보가 메모리에 올라간 지점의 주소를 저장함 */
+      function sayHello() {
+        console.log("안녕하세요");
+				return;
+      }
+			/* 
+					return 은 함수 body 의 내용이 모두 실행된 다음에 하게 됨
+					함수가 return 한다는 것은 
+					함수 body 의 내용이 모두 실행되었다는 것(함수가 종료했다는 것)을 의미함
+			*/
+			/* 함수가 return 하면 code 의 흐름이 함수를 호출한 곳으로 돌아감 */
+			/* 함수 호출부 */
+			sayHello();
+			console.log("더조은 학원");
+		
+			
+      /*		parameter(매개변수)(O)  -->  return값(반환값)(X) */
+
+      function sayHello2(name){
+				console.log("안녕하세요 " + name);
+				return;
+			}
+			sayHello2("더조은");
+
+			function addTwoNumbers(number1, number2){
+				console.log(`number1 + number2 : ${number1 + number2}`);
+        return;
+			}
+
+			addTwoNumbers(10, 20);
+
+      /*		parameter(매개변수)(X)  -->  return값(반환값)(O) */
+			/*  return 값이 있는 함수를 호출하는 code 가 그 함수의 return 값임 */
+			function sayHello3(){
+				console.log("여기는 sayHello3() 함수입니다");
+				return "안녕하세요 ~~~";
+			}
+			console.log(`sayHello3() : ${sayHello3()}`);
+
+			function addNumbers1(num1, num2, num3){
+				let result = num1 + num2 + num3;
+				return result;
+			}
+
+			function addNumbers2(num1, num2){
+				let result = num1 + num2;
+				return result;
+			}
+      /*  return 값이 있는 함수를 호출하는 code 가 그 함수의 return 값임 */
+			let resultAdd = 100 + addNumbers1(11, 22, 33, 55) + addNumbers2(100, 200, 300, 500);
+      console.log(`resultAdd : ${resultAdd}`);
+
+      /*		parameter(매개변수)(O)  -->  return값(반환값)(O) */
+
+			function sayHellow4(name, age, address){
+				console.log("여기는 sayHellow4() 함수 입니다");
+        return `이름 : ${name}, 나이 : ${age}, 주소 : ${address}`;
+			}
+      /*  return 값이 있는 함수를 호출하는 code 가 그 함수의 return 값임 */
+			console.log(sayHellow4("이순신", 46, "서울"));
+
+
+    </script>
+  </body>
+</html>

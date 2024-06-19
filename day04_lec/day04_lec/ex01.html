@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*  
+		    변수를 선언하는 keyword
+		    var (사용을 지양함)
+			let (일반 변수 : 프로그램 실행 중 변하거나 변하지 않는 값)
+			const (상수 : 프로그램 실행 중 변하지 않는 값)
+
+			javascript(python) 에서는 변수에 할당되는 값에 따라서
+			해당 변수의 data type 이 정해짐
+
+			cf. java(C 언어) 에서는 변수의 data type 을 미리 선언하고
+			    해당 변수의 data type (자료 형) 에 맞는 값만 할당할 수 있음
+                            (type : 형(태))
+		 	기본 자료형
+			
+			숫자형 : number type - integer type(정수) / float type (실수)
+                                   BigInt((2의 53-1 제곱)(9007199254740991) 보다 큰 값 혹은 -(2의 53-1제곱) 보다 작은 정수)
+                                     ㄴ 정수 리터럴 끝에 n을 붙임
+		*/
+      const bigInt = 1234567890123456789012345678901234567890n;
+      const number1 = 1234n;
+
+	  alert(`typeof(number1) : ${typeof(number1)}`);
+	  alert(`typeof(bigInt) : ${typeof(bigInt)}`);
+
+      /* alert 창에 출력하기 */
+      alert(`number1 : ${number1}`);
+
+	  /* prompt 창 : 사용자의 입력을 받아서 변수에 할당함 */
+      /* prompt 창에 출력하기 : prompt() 함수 사용  */ 
+      /* prompt 창에 입력한 값이 age 변수에 할당됨 */
+      const age = prompt("나이를 입력하세요 : ");
+      document.write(`나이 : ${age} <br>`);
+
+      /* 삼항연산자 : ? 앞의 비교식이 참이면 : 앞의 값을 반환하고 거짓이면 : 뒤의 값을 반환함 */
+      const welcome = age >= 18 ? "어서 오세요" : "18세 이상만 오세요";
+      alert(`welcome : ${welcome} `);
+
+      /* 개발자 도구 console 탭에 출력하기 */
+      console.log("number1 :", number1);
+      /* template 문자열 (backtick) 을 사용한 출력 */
+      console.log(`number1 : ${number1}`);
+
+      /* browser 화면에 출력하기 */
+      document.write("number1 : ", number1, "<br>");
+      document.write(`number1 : ${number1} <br>`);
+      document.write(`number1 : ${number1} <br>`);
+
+      let num1 = 10;
+	  let num2 = 8; 
+	  document.write(`${num1 + num2} <br>`);
+	  document.write(`${num1 - num2} <br>`);
+	  document.write(`${num1 * num2} <br>`);
+	  document.write(`${num1 / num2} <br>`); 
+	  /* 숫자를 0 으로 나누면 오류가 안 나고 Infinity 를 반환함*/
+	  document.write(`${1 / 0} <br>`); 
+	  /*  % : 나머지 연산자 */
+	  document.write(`${num1 % num2} <br>`);
+
+
+    </script>
+  </body>
+</html>

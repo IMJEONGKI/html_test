@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+        let id = "tjoeun";
+		let pw = "1234";
+
+		if(id === "tjoeun" && pw === "1234"){
+            alert("로그인 성공");
+        }
+        else{
+            alert("로그인 실패");
+        }
+
+		/* 
+		   중첩 if 문
+		   alert("로그인 성공 : 아이디와 비밀번호가 일치함");
+		   이 출력되려면
+		     외부 if 문             내부 if 문
+		   if(id === "tjoeun") 과 if(pw === "123456") 이 
+		   모두 참이어야 함
+		    ㄴ 논리 and 조건 (&&)
+		
+		*/
+		if(id === "tjoeun"){
+			if(pw === "123456"){
+				alert("로그인 성공 : 아이디와 비밀번호가 일치함");
+			}else{
+				alert("로그인 실패 : 비밀번호가 틀렸습니다.");
+			}
+		}else{
+			alert("아이디가 틀렸습니다.");
+		}
+
+
+
+        
+
+	</script>
+	
+</body>
+</html>

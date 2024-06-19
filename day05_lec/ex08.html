@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 334 -->
+    <script>
+      /* 메소드 : 객체(클래스) 속에 있는 함수 */
+      let object1 = {
+        number: 273,
+        string: "rintiantta",
+        boolean: true,
+        array: [52, 273, 103, 32],
+        method: function (name) {
+          console.log(
+            `${name} -${this.number} - ${this.string} - ${this.boolean} - ${this.array}`
+          );
+        },
+      };
+      // typeof(object1) : object
+      console.log(`typeof(object1) : ${typeof object1}`);
+
+      // object1 : [object Object]
+      console.log(`object1 : ${object1}`);
+
+      // 객체 속에 있는 속성값 출력하기
+      console.log(`object1.number  : ${object1.number}`);
+      console.log(`object1.string  : ${object1.string}`);
+      console.log(`object1.boolean : ${object1.boolean}`);
+      console.log(`object1.array   : ${object1.array}`);
+      console.log(`object1["number"]  : ${object1["number"]}`);
+      console.log(`object1["string"]  : ${object1["string"]}`);
+      console.log(`object1["boolean"] : ${object1["boolean"]}`);
+      console.log(`object1["array"]   : ${object1["array"]}`);
+
+			/* object1 의 메소드 호출하기 */
+      object1.method("더조은");
+    </script>
+  </body>
+</html>

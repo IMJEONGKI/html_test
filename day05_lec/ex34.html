@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script
+      src="https://code.jquery.com/jquery-3.6.4.min.js"
+      integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+      crossorigin="anonymous"
+    ></script>
+	<script>
+			$(document).ready(function () {
+            // 내부 글자를 변경합니다.
+						// text() : <a href="#">text()</a> 전체를 문자열로 인식 - 태그가 동작 안 함
+						// html() : <a href="#">html()</a> 를 html code 로 인식 - 태그가 동작함
+            $('h1:nth-child(1)').text('<a href="#">text()</a>');
+            $('h1:nth-child(2)').html('<a href="#">html()</a>');
+        });
+	</script>
+</head>
+<body>
+	<!-- 392 -->
+	<h1>Header - 0</h1>
+	<h1>Header - 1</h1>
+</body>
+</html>

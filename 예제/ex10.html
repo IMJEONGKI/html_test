@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<!-- 342 연습문제 21 번 -->
+	 <script>
+     /* factorial 함수 */
+     /* recursive function (재귀함수) 를 이용한 경우 */
+		 function factorial(n) {
+       if (n == 1) {
+         return 1;
+       } else {
+         return n * factorial(n - 1);
+       }
+     }
+		 let result = factorial(5);
+     console.log(`5! : ${result}`);
+
+     /* 일반함수를 이용하는 경우 */
+		 function factorial(n) {
+       let result = 1;
+       for (let i = 1; i <= n; i++) {
+         result *= i;
+       }
+       return result;
+     }
+     result = factorial(5);
+     console.log(`5! : ${result}`);
+
+	 </script>
+</body>
+</html>

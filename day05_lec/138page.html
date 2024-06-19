@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		/*
+		  .box h2 + ul
+			클래스가 box 인 요소의 모든 자손 h2 요소
+			바로 옆(같은 depth : 형제(sibling)) ul 요소 에 스타일링을 한다는 의미
+			h2 + ul 에서 + 가 없으면  h2 요소의 모든 하위 ul 요소를 의미함
+                   + 가 있으면  h2 요소의 형제 요소 중에서 
+									 바로 옆(인접한) 요소만 지정하게 됨
+									 h2 다음에 (같은 depth : 형제(sibling)) ul 이 두 개가 오는데, 
+									 + 가 있으면 그 두 개 중 첫 번째만 해당됨
+		*/
+		.box h2 + ul{
+			background-color: cornflowerblue;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<!-- 138page 연습문제 5 번 -->
+	<div class="box">
+		<h2>제 목1</h2>
+		<ul>
+      <li>내 용1_1_1</li>
+      <li>내 용1_1_2</li>
+      <li>내 용1_1_3</li>
+      <li>내 용1_1_4</li>
+		</ul>
+		<ul>
+			<li>내 용1_2_1</li>
+			<li>내 용1_2_2</li>
+			<li>내 용1_2_3</li>
+		</ul>
+		<h2>제 목2</h2>
+		<ul>
+      <li>내 용2_1_1</li>
+      <li>내 용2_1_2</li>
+      <li>내 용2_1_3</li>
+      <li>내 용2_1_4</li>
+		</ul>
+		<ul>
+			<li>내 용2_2_1</li>
+			<li>내 용2_2_2</li>
+			<li>내 용2_2_3</li>
+		</ul>
+	</div>
+
+</body>
+</html>

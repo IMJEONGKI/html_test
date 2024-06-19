@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+
+		let number = 10;
+
+		/* 조건이 참인 경우, 모두 출력됨 */
+
+		if(number === 10){ console.log("number is 10"); }
+		if(number >= 5){ console.log("number 는 5 보다 크거나 같습니다"); }
+		if(number === 20){ console.log("number 는 20 과 같습니다"); }
+		if(number < 100){ console.log("number 는 100 보다 작습니다"); }
+		if(number <= 30){ console.log("number 는 30 보다 작거나 같습니다."); }
+
+		console.log("-----------------------------");
+
+		/*   
+		  if 조건문
+
+		  if 만 (여러 개) 사용하는 경우 : (조건이 하나가 됨) if 문들이 서로 독립적임
+		  if ~ else 를 사용하는 경우  : 조건이 두 개가 됨 
+		  if ~ if else ~ else 를 사용하는 경우
+		   : if 문들이 서로 연결되어 있음 
+               ㄴ  택일 : 처음으로 참이 되는 if 문만 실행됨
+
+		*/
+
+		if(number != 10){ console.log("number is 10"); }
+		else if(number >= 5){ console.log("number 는 5 보다 크거나 같습니다"); }
+		else if(number === 20){ console.log("number 는 20 과 같습니다"); }
+		else if(number < 100){ console.log("number 는 100 보다 작습니다"); }
+		else if(number <= 30){ console.log("number 는 30 보다 작거나 같습니다."); }
+		else { console.log(`위의 모든 조건을 거짓입니다`) }
+
+	</script>
+</body>
+</html>

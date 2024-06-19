@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script>
+
+    window.onload = function() {
+      let button3 = document.getElementById('button3');
+      button3.onclick = function() {
+        alert('안녕하세요 button3');
+      }
+		}
+
+    function buttonClick() {
+      alert('안녕하세요');
+    }
+  </script>
+</head>
+<body>
+	<!-- 367 -->
+  <button onclick="alert('click')">버튼1</button><br>
+	<!-- 368 -->
+  <button onclick="buttonClick()">버튼2</button><br>
+	<!-- 368 ~ 369 -->
+  <button id="button3">버튼3</button>
+
+</body>
+</html>

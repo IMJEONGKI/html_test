@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+
+		let number = 100;
+		console.log(`number : ${number}`); 
+		number = 200;
+		console.log(`number : ${number}`); 
+		number = 300;
+		console.log(`number : ${number}`); 
+
+		let funct1 = function() { console.log("안녕하세요");  }
+		funct1();
+		funct1 = function() { console.log("반갑습니다");  }
+    funct1();				
+		funct1 = function() { console.log("더조은학원입니다");  }
+		funct1();		
+
+		/* 326 ~ 327 */
+		let funct = function (){ alert("함수 A"); };
+		funct = function (){ alert("함수 B"); };
+		funct()
+
+	</script>
+</body>
+</html>
